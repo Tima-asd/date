@@ -1,0 +1,48 @@
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
+.container-fluid_1{
+    height: 80px;
+    background-color: #B5F1CC;
+}
+.container-fluid_2{
+    height: 80px;
+    background-color: #3C84AB;
+}
+.container-fluid_3{
+    height: 75px;
+    background-color: #6C84AB;
+}
+.container-fluid_4{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.date{
+    padding-left: 100px;
+    padding-top: 15px;
+}
+.fraza{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+#packers{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+.form-control{
+width: 126;
+display: inline-block;
+}
+.input{
+    margin-left: 95px;
+    width: 826px;
+    height: 44px;
+    margin-top: 15px;
+}
+.btn{
+margin-bottom: 5px;
+}
+.title{
+color:red;
+}

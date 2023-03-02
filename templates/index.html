@@ -1,0 +1,50 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="static/style.css">
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container-fluid_1">
+    <h1 class="date" >My to-do list {{x2}}</h1>
+</div>
+
+<div class="container-fluid_2">
+
+    <h1 class="fraza" > ✔ Great, we've created a list for you. You should save your list so you don't forget it.</h1>
+</div>
+<div class="container-fluid_3">
+    
+    <form action="{{ url_for('home') }}" method="POST">
+    <input class="form-control input" name="title" type="text" placeholder="White your next task here...">
+    <button class="btn btn-primary btn-lg" type="submit">Add a task</button>
+    </form>
+</div>
+<div class="container-fluid_4">
+    {% for student in x1 %}
+<div class="form-group">
+    <div class="col-md-5">
+        <div class="checkbox">
+
+            <font size="12">
+                <span>
+            <input type="checkbox" name="packersOff" id="packers" value="1"/>
+
+            <label for="packers" class="strikethrough">{{student.title}}</label> <input type="date" class="form-control">
+                  <a href="{{url_for('delete_post', post_id=student.id) }}">✘</a>
+              </span>
+            </font>
+        </div>
+     </div>
+    {% endfor %}
+</div>
+    </div>
+
+</body>
+</html>
